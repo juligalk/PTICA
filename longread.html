@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>«Птиса» – серивс оберегов</title>
+        <link rel="icon" type="image/x-icon" href="img/fav.ico">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header>
+            <img src="img/logo.svg">
+            <nav>
+                <div class="button-menu">
+                    <a class="p1" href="#about">О нас</a>
+                </div>
+                <div class="button-menu">
+                    <a class="p1" href="#subscribe">Подписка</a>
+                </div>
+                <div class="button-menu">
+                    <a class="p1" href="#contact">Контакты</a>
+                </div>
+            </nav>
+        </header>
+        <main>
+            <section class="about" id="about">
+                <div class="about-text">
+                    <h1>птиса</h1>
+                    <p class="p1">Сервис оберегов, где маленькие птички помогают создать благоприятную спокойную атмосферу в&nbsp;вашем доме и&nbsp;жизни. Живые талисманы будут помогать людям в&nbsp;разные периоды жизни.</p>
+                    <div class="about-buttons">
+                        <a href="#subscribe"><button class="but-sh">Подписаться</button></a>
+                        <a href="#merch"><button class="but-sh">Купить мерч</button></a>
+                    </div>
+                </div>
+                <img src="img/illustration.svg">
+            </section>
+            <section class="promo" style="background-color: #99D8FF; background-image: url(img/background1.svg);">
+                <h2>80 дней</h2>
+                <p class="p1">пробного периода на любую птису, <br>только для новых пользователей</p>
+            </section>
+            <section class="merch" id="subscribe">
+                <h2>подписка</h2>
+                <div class="cards-ptica">
+                    <div class="card-ptica">
+                        <div class="ptica-img">
+                            <img src="img/sv=Default.svg" class="s1">
+                            <img src="img/sv=Variant2.svg" class="s2">
+                        </div>
+                        <p class="p2-semibold">Свиристель</p>
+                        <p class="p2">Способность маленькой птисы - умение следить даже за самым большим домом.</p>
+                        <button class="but-sh-blue but-sh order" data-order="drop-svir">Оформить</button>
+                    </div>
+                    <div class="card-ptica svi">
+                        <div class="ptica-img">
+                            <img src="img/cova=Default.svg" class="s1">
+                            <img src="img/cova=Variant2.svg" class="s2">
+                        </div>
+                        <p class="p2-semibold">Сова</p>
+                        <p class="p2">Самая умная и&#160;ответственная птиса. Помогает в любых жизненных ситуациях.</p>
+                        <button class="but-sh-red but-sh order" data-order="drop-sov">Оформить</button>
+                    </div>
+                    <div class="card-ptica">
+                        <div class="ptica-img">
+                            <img src="img/soica=Default.svg" class="s1">
+                            <img src="img/soica=Variant2.svg" class="s2">
+                        </div>
+                        <p class="p2-semibold">Свиристель</p>
+                        <p class="p2">Способность маленькой птисы - умение следить даже за самым большим домом.</p>
+                        <button class="but-sh-green but-sh order" data-order="drop-soi">Оформить</button>
+                    </div>
+                </div>
+                <div class="dropdown drop-svir" id="drop-svi" style="background-color: rgba(153, 216, 255, 35%);">
+                    <div class="care">
+                        <div class="info-care">
+                            <h3>уход</h3>
+                            <img src="img/close-1.svg" class="close">
+                        </div>
+                        <div class="care-box">
+                            <div class="card-merch">
+                                <div class="merch-img" style="background-image: url(img/corm-1.png);"></div>
+                                    <p class="p3-semibold">Корм</p>
+                                    <p class="p2">Нектар цветов, листья&#160;кустарников</p>
+                            </div>
+                            <div class="card-merch">
+                                <div class="merch-img" style="background-image: url(img/sleep-1.png);"></div>
+                                <p class="p3-semibold">Лежанка</p>
+                                <p class="p2">Место отдыха для птисы&#160;</p>
+                            </div>
+                        </div>
+                        <div class="form-ptica" id="form">
+                            <h3>оформить подписку</h3>
+                            <form method="get" action="#subscribe">
+                                <label>Имя Фамилия</label><br>
+                                <input class="inp-n" type="text" placeholder="Юлиана Галкина"><br>
+                                <label>E-mail</label><br>
+                                <input class="inp-n" type="text" placeholder="ptica@ptica.com"><br>
+                                <label>Сообщение</label><br>
+                                <textarea type="text" placeholder="Здравствуйте! Хочу приобрести птису)"></textarea><br>
+                                <input class="but-sh" type="submit" value="Отправить">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="dropdown drop-sov" id="drop-sov" style="background-color: rgba(252, 99, 99, 35%);">
+                    <div class="care">
+                        <div class="info-care">
+                            <h3>уход</h3>
+                            <img src="img/close-2.svg" class="close">
+                        </div>
+                        <div class="care-box">
+                            <div class="card-merch">
+                                <div class="merch-img" style="background-image: url(img/corm-2.png);"></div>
+                                    <p class="p3-semibold">Корм</p>
+                                    <p class="p2">Нектар цветов, листья&#160;кустарников</p>
+                            </div>
+                            <div class="card-merch">
+                                <div class="merch-img" style="background-image: url(img/sleep-2.png);"></div>
+                                <p class="p3-semibold">Лежанка</p>
+                                <p class="p2">Место отдыха для птисы&#160;</p>
+                            </div>
+                        </div>
+                        <div class="form-ptica" id="form">
+                            <h3>оформить подписку</h3>
+                            <form method="get" action="#subscribe">
+                                <label>Имя Фамилия</label><br>
+                                <input class="inp-n" type="text" placeholder="Юлиана Галкина"><br>
+                                <label>E-mail</label><br>
+                                <input class="inp-n" type="text" placeholder="ptica@ptica.com"><br>
+                                <label>Сообщение</label><br>
+                                <textarea type="text" placeholder="Здравствуйте! Хочу приобрести птису)"></textarea><br>
+                                <input class="but-sh" type="submit" value="Отправить">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="dropdown drop-soi" id="drop-soi" style="background-color: rgba(173, 242, 136, 35%);">
+                    <div class="care">
+                        <div class="info-care">
+                            <h3>уход</h3>
+                            <img src="img/close-3.svg" class="close">
+                        </div>
+                        <div class="care-box">
+                            <div class="card-merch">
+                                <div class="merch-img" style="background-image: url(img/corm-3.png);"></div>
+                                    <p class="p3-semibold">Корм</p>
+                                    <p class="p2">Нектар цветов, листья&#160;кустарников</p>
+                            </div>
+                            <div class="card-merch">
+                                <div class="merch-img" style="background-image: url(img/sleep-3.png);"></div>
+                                <p class="p3-semibold">Лежанка</p>
+                                <p class="p2">Место отдыха для птисы&#160;</p>
+                            </div>
+                        </div>
+                        <div class="form-ptica" id="form">
+                            <h3>оформить подписку</h3>
+                            <form method="get" action="#subscribe">
+                                <label>Имя Фамилия</label><br>
+                                <input class="inp-n" type="text" placeholder="Юлиана Галкина"><br>
+                                <label>E-mail</label><br>
+                                <input class="inp-n" type="text" placeholder="ptica@ptica.com"><br>
+                                <label>Сообщение</label><br>
+                                <textarea type="text" placeholder="Здравствуйте! Хочу приобрести птису)"></textarea><br>
+                                <input class="but-sh" type="submit" value="Отправить">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                
+            </section>
+            <section class="promo" style="background-color: #FC6363; background-image: url(img/background2.svg);">
+                <h2>30%</h2>
+                <p class="p1">скидка на весь обережный мерч нашего бренда, <br>успей купить до 11.11</p>
+            </section>
+            <section class="merch" id="merch">
+                <h2>мерч</h2>
+                <div class="cards-merch">
+                    <div class="card-merch">
+                        <div class="merch-img" style="background-image: url(img/note.png);"></div>
+                        <p class="p2-semibold">Блокнот</p>
+                        <p class="p2">150 ₽</p>
+                        <button class="but-sh">Скоро</button>
+                    </div>
+                    <div class="card-merch">
+                        <div class="merch-img" style="background-image: url(img/shop.png);"></div>
+                        <p class="p2-semibold">Шоппер</p>
+                        <p class="p2">300 ₽</p>
+                        <button class="but-sh">Скоро</button>
+                    </div>
+                    <div class="card-merch">
+                        <div class="merch-img" style="background-image: url(img/tea.jpg);"></div>
+                        <p class="p2-semibold">Чай</p>
+                        <p class="p2">180 ₽</p>
+                        <button class="but-sh">Скоро</button>
+                    </div>
+                    <div class="card-merch">
+                        <div class="merch-img" style="background-image: url(img/brel.png);"></div>
+                        <p class="p2-semibold">Брелоки</p>
+                        <p class="p2">100 ₽</p>
+                        <button class="but-sh">Скоро</button>
+                    </div>
+                    <div class="card-merch">
+                        <div class="merch-img" style="background-image: url(img/socks.png);"></div>
+                        <p class="p2-semibold">Носки</p>
+                        <p class="p2">200 ₽</p>
+                        <button class="but-sh">Скоро</button>
+                    </div>
+                    <div class="card-merch">
+                        <div class="merch-img" style="background-image: url(img/candle.jpg);"></div>
+                        <p class="p2-semibold">Свеча</p>
+                        <p class="p2">180 ₽</p>
+                        <button class="but-sh">Скоро</button>
+                    </div>
+                    <div class="card-merch">
+                        <div class="merch-img" style="background-image: url(img/gift.png); background-position: left 40% center;"></div>
+                        <p class="p2-semibold">Подарок</p>
+                        <p class="p2">5.000 ₽</p>
+                        <button class="but-sh">Скоро</button>
+                    </div>
+                    <div class="card-merch">
+                        <div class="merch-img" style="background-image: url(img/secret.png);"></div>
+                        <p class="p2-semibold">Секрет</p>
+                        <p class="p2">??? ₽</p>
+                        <button class="but-sh">Скоро</button>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer id="contact">
+           <img class="logo-im" src="img/logotype.svg">
+           <div class="footer-nav">
+                <div class="infotext">
+                    <p class="p1">г.Выкса, ул.Жизни<br><a href="tel:+79005555555">+7 (900) 555 55 55</a></p>
+                    <p class="p1">ptica.com<br><a href="mailto:ptica@ptica.com">ptica@ptica.com</a></p>
+                </div>
+                <div class="contact">
+                    <a href="#"><img src="img/VK-icon.svg"></a>
+                    <a href="#"><img src="img/dzen-icon.svg"></a>
+                    <a href="#"><img src="img/tg-icon.svg"></a>
+                </div>
+                <a href="https://hsedesign.ru/" target="_blank"><img src="img/black (1).svg"></a>
+           </div>
+        </footer>
+        <script src="script.js"></script>
+    </body>
+</html>

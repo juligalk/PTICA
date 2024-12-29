@@ -1,0 +1,12 @@
+@font-face {
+    font-family: 'MV-SKIFER';
+    src: url('MVSKIFERRegular.eot');
+    src: url('MVSKIFERRegular.eot?#iefix') format('embedded-opentype'),
+        url('MVSKIFERRegular.woff2') format('woff2'),
+        url('MVSKIFERRegular.woff') format('woff'),
+        url('MVSKIFERRegular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+

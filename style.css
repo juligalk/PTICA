@@ -1,0 +1,405 @@
+*{
+    padding: 0%;
+    margin: 0;
+    scroll-behavior: smooth;
+}
+
+@font-face {
+    font-family: 'MV-SKIFER';
+    src: url('font/skifer/MVSKIFERRegular.eot');
+    src: url('font/skifer/MVSKIFERRegular.eot?#iefix') format('embedded-opentype'),
+        url('font/skifer/MVSKIFERRegular.woff2') format('woff2'),
+        url('font/skifer/MVSKIFERRegular.woff') format('woff'),
+        url('font/skifer/MVSKIFERRegular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Golos Text';
+    src: url('font/golos/GolosText-Regular.eot');
+    src: url('font/golos/GolosText-Regular.eot?#iefix') format('embedded-opentype'),
+        url('font/golos/GolosText-Regular.woff2') format('woff2'),
+        url('font/golos/GolosText-Regular.woff') format('woff'),
+        url('font/golos/GolosText-Regular.ttf') format('truetype'),
+        url('font/golos/GolosText-Regular.svg#GolosText-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+a{
+    text-decoration: none;
+    color: #000;
+}
+
+.p1{
+    font-family: 'Golos Text';
+    font-size: 18px;
+    font-weight: 400;
+}
+
+nav .p1{
+    font-size: 20px;
+}
+
+.p2{
+    font-family: 'Golos Text';
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.p2-semibold{
+    font-family: 'Golos Text';
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.p3-semibold{
+    font-family: 'Golos Text';
+    font-size: 24px;
+    font-weight: 600;
+}
+
+h1{
+    font-family: 'MV-SKIFER';
+    font-size: 96px;
+    font-weight:normal;
+}
+
+h2{
+    font-family: 'MV-SKIFER';
+    font-size: 64px;
+    font-weight:normal;
+}
+
+h3{
+    font-family: 'MV-SKIFER';
+    font-size: 52px;
+    font-weight:normal;
+}
+
+body{
+    background-color: #F8F8F8;
+    margin: 0 auto;
+}
+
+header, .about, footer, .promo{
+    background-color: #ffffff;
+    max-width: 75%;
+    margin: 0 auto;
+    padding: 48px;
+    border-radius: 40px;
+}
+
+.merch{
+    max-width: 81.5%;
+    margin: 0 auto;
+    padding: 0px;
+    border-radius: 40px;
+}
+
+header{
+    max-width: 75%;
+    position: fixed;
+    z-index: 100;
+    right: 0%;
+    left: 0%;
+    background-color: #ffffff;
+    margin: 0 auto;
+    padding: 24px 48px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav{
+    display: flex;
+    gap: 24px;
+    align-items: center;
+}
+
+.button-menu{
+    cursor: pointer;
+    display: flex;
+    /* align-items: center; */
+    height: 40px;
+    padding: 0px 8px;
+    /* box-sizing: border-box;
+    border-bottom: 3px solid #FC6363; */
+}
+
+.button-menu:hover{
+    box-sizing: border-box;
+    border-bottom: 3px solid #FC6363;
+    transition: all 0.2s ease-in-out;
+}
+
+.about{
+    padding: 140px 48px 48px 48px;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.about-text{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.about-text .p1{
+    width: 70%;
+}
+
+.about-buttons{
+    display: flex;
+    gap: 48px;
+}
+
+.but-sh{
+    padding: 10px 32px;
+    height: auto;
+    font-family: 'Golos Text';
+    font-size: 20px;
+    font-weight: 600;
+    background-color: #ffffff;
+    border: 3px solid #FC6363;
+    border-radius: 20px;
+    border-bottom-right-radius: 0px;
+    cursor: pointer;
+   
+}
+
+.but-sh-blue{
+    border: 3px solid #99D8FF;
+}
+
+
+.but-sh-green{
+    border: 3px solid #ADF288;
+}
+
+.but-sh:hover{
+    background-color: #FC6363;
+    color: #ffffff;
+    transition: all 0.2s ease-in-out;
+}
+
+.but-sh-blue:hover{
+    background-color: #99D8FF;
+    color: #ffffff;
+    transition: all 0.2s ease-in-out;
+}
+
+.but-sh-green:hover{
+    background-color: #ADF288;
+    color: #ffffff;
+    transition: all 0.2s ease-in-out;
+}
+
+.promo{
+    margin-top: 48px;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    background-repeat: no-repeat;
+    background-position: right -5% bottom 50%;
+}
+
+.merch{
+    margin-top: 48px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.cards-merch{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap: 48px;
+
+}
+
+.card-merch{
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    max-width: 190px;
+    padding: 36px;
+    border-radius: 40px;
+    border-bottom-right-radius: 0px;
+}
+
+.merch-img{
+    width: 190px;
+    height: 190px;
+    border-radius: 20px;
+    background-size: cover;
+    background-position: center;
+}
+
+.card-ptica{
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    width: 220px;
+    height: 340px;
+    padding: 36px;
+    border-radius: 40px;
+    border-bottom-right-radius: 0px;
+}
+
+.ptica-img{
+    position: relative;
+    height: 142px;
+}
+
+.cards-ptica{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 48px;
+
+}
+
+.ptica-img img{
+    position: absolute;
+}
+
+.s1{
+    z-index: 20;
+}
+
+.s1:hover{
+    opacity: 0%;
+    transition: all 0.4s ease-in-out;
+}
+
+.s2{
+    z-index: 0;
+}
+
+.dropdown{
+    margin-top: 48px;
+    width: 91.6%;
+    margin: 0 auto;
+    padding: 48px;
+    border-radius: 40px;
+    display: none;
+    overflow: auto;
+}
+
+.show {display: block;}
+
+.care-box{
+    display: flex;
+    gap: 48px;
+}
+
+.care{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.info-care{
+    display: flex;
+    justify-content: space-between;
+}
+
+.info-care img{
+    cursor: pointer;
+}
+
+.close:focus-within .dropdown{
+    display: none;
+}
+
+.form-ptica h3{
+    margin-bottom: 24px;
+
+}
+
+.inp-n, textarea{
+    font-family: 'Golos Text';
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 16px;
+    margin-top: 10px;
+    background-color: #ffffff;
+    border: 0px solid #FC6363;
+    border-radius: 20px;
+    border-bottom-right-radius: 0px;
+    padding: 16px 20px 14px 20px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+textarea{
+    padding: 20px 20px 14px 20px;
+    line-height: 50%;
+}
+
+.inp-n::placeholder, textarea::placeholder{
+    color: #7F7F7F;
+    font-family: 'Golos Text';
+    font-size: 18px;
+    font-weight: 400;
+
+}
+
+.inp-n:focus, textarea:focus{
+    background-color: #ffffff;
+    outline: 3px solid #FC6363;
+    color: #000;
+}
+
+label{
+    font-family: 'Golos Text';
+    font-size: 24px;
+    font-weight: 500;
+    color: #000;
+}
+
+footer{
+    margin-top: 48px;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+
+.logo-im{
+    height: 60px;
+    margin-bottom: 24px;
+}
+
+.footer-nav{
+    display: flex;
+    justify-content: space-between;
+}
+
+.infotext{
+    display: flex;
+    gap: 48px;
+}
+
+.contact{
+    display: flex;
+    gap: 24px;
+}
+
+.footer-nav img{
+    height: 50px;
+    cursor: pointer;
+}
